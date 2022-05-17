@@ -1,0 +1,16 @@
+body{
+	background-color: #f2f2f2;
+}
+
+.page-content{
+	min-height: calc(100vh - 50px);
+}
+
+footer {
+    height: 50px;
+}
+
+#wrongpass{
+	color: red;
+	display: none;
+}

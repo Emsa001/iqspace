@@ -1,0 +1,86 @@
+.credits-text a{
+	color: #fff;
+}
+
+.credits-text a:hover{
+	color: #4bacff;
+	text-decoration: underline !important;
+}
+
+.footer{
+	margin-top: 100%;
+}
+
+.logout:hover{
+	text-decoration: underline !important;
+}
+
+.submit-form-newsletter:hover{
+	background-color: rgba(0, 0, 0, 0.44);
+	font-weight: bold;
+}
+
+.mark{
+	float: left;
+	width: 30px;
+	margin-right: 5px;
+	text-align: center;
+	margin-bottom:5px !important;
+	cursor: pointer;
+}
+
+#Kartkowka{
+	background-color: #ad5cb8;
+}
+#Sprawdzian{
+	background-color: #f26e7d;
+}
+#Test{
+	background-color: #f0ad4e;
+}
+#Odpowiedzustna{
+	background-color: #f06d4e;
+}
+#Pracadomowa{
+	background-color: #1a31de;
+}
+#PracaKlasowa{
+	background-color: #e489e8;
+}
+#Pracanalekcji{
+	background-color: #6c2bc6;
+}
+#Zachowanie{
+	background-color: #db2da5;
+}
+#Inna{
+	background-color: #4eb2f0;
+}
+#Wypracowanie{
+    background-color: #359d79;
+}
+
+.icon-task{
+	margin-right: 10px;
+	font-size: 25px !important;
+	cursor: pointer;
+}
+
+.news-content-desc{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 75ch;
+}
+
+.task-content{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+.lesson_plan{
+	margin-right:10px;
+}

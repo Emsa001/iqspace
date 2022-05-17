@@ -1,0 +1,37 @@
+<?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "100_school";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT * FROM teachers";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+      // output data of each row
+        $i = 1;
+      while($row = $result->fetch_assoc()) {
+          $i++;
+          $password = $row['password'];
+          $login = $row['login'];
+          $sql = "UPDATE `teachers` SET `password`=MD5('$password') WHERE `login` = '$login'";
+          if ($conn->query($sql) === TRUE) {
+              echo "New record created successfully <br/>";
+            }
+          else {
+              echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+          
+      }
+    } else {
+      echo "0 results";
+    }
+    $conn->close();
+?> 

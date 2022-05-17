@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px)  {.startpage-bigbanner{display: none;}}
+
+/*Myaccount.php*/
+@media only screen and (max-width: 1150px)  {.lastlogin{display: none;}}
+@media only screen and (max-width: 500px)  {.whologged{width: 200px;}}
+
+/*tasks*/
+@media only screen and (max-width: 1250px)  {.task{width: 200px;}}
